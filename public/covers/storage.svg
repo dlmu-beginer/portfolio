@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0E19"/>
+      <stop offset="1" stop-color="#131C2F"/>
+    </linearGradient>
+    <linearGradient id="layer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6C8CFF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0.18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="30%" r="45%">
+      <stop offset="0" stop-color="#6C8CFF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#6C8CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+
+  <g transform="translate(0 0)">
+    <g fill="none" stroke="url(#layer)" stroke-width="1.6">
+      <path d="M220 220 L600 120 L980 220 L600 320 Z"/>
+      <path d="M220 300 L600 200 L980 300 L600 400 Z" opacity="0.7"/>
+      <path d="M220 380 L600 280 L980 380 L600 480 Z" opacity="0.45"/>
+      <path d="M220 460 L600 360 L980 460 L600 560 Z" opacity="0.25"/>
+    </g>
+    <g stroke="#8FA6FF" stroke-opacity="0.35">
+      <path d="M220 220 L220 460M600 120 L600 360M980 220 L980 460"/>
+      <path d="M600 320 L600 560" stroke-opacity="0.2"/>
+    </g>
+    <g fill="#C9D6FF">
+      <circle cx="220" cy="220" r="4"/>
+      <circle cx="980" cy="220" r="4"/>
+      <circle cx="600" cy="120" r="5"/>
+      <circle cx="600" cy="560" r="4" opacity="0.6"/>
+    </g>
+    <g font-family="monospace" font-size="12" fill="#6E7C99">
+      <text x="640" y="230">key ’ value</text>
+      <text x="640" y="310">JSON.parse()</text>
+      <text x="640" y="390">pf:projects</text>
+      <text x="640" y="470">5MB / quota</text>
+    </g>
+  </g>
+
+  <g font-family="monospace" fill="#94A3B8">
+    <text x="64" y="688" font-size="14" letter-spacing="4">LOCALSTORAGE / DB</text>
+    <text x="64" y="712" font-size="12" fill="#5A6784" letter-spacing="2">NO BACKEND · ZERO CONFIG</text>
+  </g>
+  <rect x="64" y="652" width="44" height="2" rx="1" fill="#6C8CFF"/>
+</svg>

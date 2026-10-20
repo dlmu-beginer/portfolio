@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#090D18"/>
+      <stop offset="0.65" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#121B2E"/>
+    </linearGradient>
+    <radialGradient id="horizon" cx="50%" cy="88%" r="60%">
+      <stop offset="0" stop-color="#6C8CFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#6C8CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#8FA6FF" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#horizon)"/>
+
+  <g fill="#E6EAF2">
+    <circle cx="120" cy="110" r="1.5" opacity="0.6"/>
+    <circle cx="240" cy="200" r="1" opacity="0.4"/>
+    <circle cx="360" cy="90" r="1.8" opacity="0.7"/>
+    <circle cx="470" cy="170" r="1.1" opacity="0.45"/>
+    <circle cx="560" cy="70" r="1.4" opacity="0.6"/>
+    <circle cx="690" cy="140" r="1" opacity="0.4"/>
+    <circle cx="780" cy="60" r="1.6" opacity="0.65"/>
+    <circle cx="900" cy="180" r="1.2" opacity="0.5"/>
+    <circle cx="1010" cy="100" r="1.7" opacity="0.6"/>
+    <circle cx="1100" cy="230" r="1" opacity="0.35"/>
+    <circle cx="180" cy="320" r="1" opacity="0.3"/>
+    <circle cx="660" cy="280" r="1.2" opacity="0.35"/>
+    <circle cx="980" cy="330" r="1.1" opacity="0.3"/>
+  </g>
+
+  <path d="M0 590 C 260 548 420 620 620 566 S 980 500 1200 548" fill="none" stroke="url(#line)" stroke-width="1.4"/>
+  <path d="M0 640 C 300 610 460 668 680 628 S 1020 570 1200 616" fill="none" stroke="#38BDF8" stroke-opacity="0.18" stroke-width="1"/>
+
+  <g font-family="monospace" fill="#94A3B8">
+    <text x="64" y="688" font-size="14" letter-spacing="4">CANVAS / STARFIELD</text>
+    <text x="64" y="712" font-size="12" fill="#5A6784" letter-spacing="2">60FPS · REDUCED MOTION</text>
+  </g>
+  <rect x="64" y="652" width="44" height="2" rx="1" fill="#38BDF8"/>
+</svg>

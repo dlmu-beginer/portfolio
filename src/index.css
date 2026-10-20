@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #0b0f1a;
+    --surface: #121826;
+    --surface-2: #1a2233;
+    --border: rgba(255, 255, 255, 0.08);
+    --text: #e6eaf2;
+    --muted: #94a3b8;
+    --accent: #6c8cff;
+    --accent-2: #38bdf8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Inter, system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(108, 140, 255, 0.35);
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0b0f1a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #232c3f;
+    border-radius: 999px;
+    border: 2px solid #0b0f1a;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #33405a;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .glass-nav {
+    background-color: rgba(11, 15, 26, 0.72);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .card-surface {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+
+  .focus-ring:focus-visible {
+    outline: 2px solid rgba(108, 140, 255, 0.75);
+    outline-offset: 2px;
+  }
+
+  .aurora-bg {
+    background-image:
+      radial-gradient(620px circle at 12% 8%, rgba(108, 140, 255, 0.14), transparent 62%),
+      radial-gradient(720px circle at 88% 0%, rgba(56, 189, 248, 0.1), transparent 58%),
+      radial-gradient(900px circle at 50% 105%, rgba(108, 140, 255, 0.07), transparent 62%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(115deg, #f3f6ff 0%, #b9c6ff 42%, #6c8cff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .grid-overlay {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(circle at 50% 40%, black 0%, transparent 72%);
+    -webkit-mask-image: radial-gradient(circle at 50% 40%, black 0%, transparent 72%);
+  }
+}

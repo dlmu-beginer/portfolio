@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0F1A"/>
+      <stop offset="1" stop-color="#141D30"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1C2538"/>
+      <stop offset="1" stop-color="#121A2A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6C8CFF"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="25%" r="55%">
+      <stop offset="0" stop-color="#6C8CFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#6C8CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+
+  <g transform="translate(210 150)">
+    <rect x="120" y="90" width="540" height="330" rx="24" fill="#0D1422" stroke="#FFFFFF" stroke-opacity="0.06"/>
+    <rect x="70" y="45" width="540" height="330" rx="24" fill="#101827" stroke="#FFFFFF" stroke-opacity="0.1"/>
+    <rect x="20" y="0" width="540" height="330" rx="24" fill="url(#card)" stroke="#FFFFFF" stroke-opacity="0.14"/>
+
+    <rect x="52" y="40" width="120" height="10" rx="5" fill="#FFFFFF" opacity="0.22"/>
+    <rect x="52" y="72" width="300" height="22" rx="8" fill="#FFFFFF" opacity="0.12"/>
+    <rect x="52" y="112" width="220" height="10" rx="5" fill="#FFFFFF" opacity="0.07"/>
+
+    <rect x="52" y="168" width="200" height="120" rx="16" fill="#0B0F1A" stroke="#FFFFFF" stroke-opacity="0.07"/>
+    <rect x="276" y="168" width="216" height="120" rx="16" fill="#0B0F1A" stroke="#FFFFFF" stroke-opacity="0.07"/>
+    <rect x="276" y="168" width="216" height="8" rx="4" fill="url(#accent)" opacity="0.7"/>
+
+    <rect x="52" y="260" width="56" height="20" rx="10" fill="#6C8CFF" opacity="0.18" stroke="#6C8CFF" stroke-opacity="0.45"/>
+    <rect x="118" y="260" width="56" height="20" rx="10" fill="#FFFFFF" opacity="0.05"/>
+  </g>
+
+  <g font-family="monospace" fill="#94A3B8">
+    <text x="64" y="688" font-size="14" letter-spacing="4">DARK UI / HIERARCHY</text>
+    <text x="64" y="712" font-size="12" fill="#5A6784" letter-spacing="2">SURFACE · BORDER · GLOW</text>
+  </g>
+  <rect x="64" y="652" width="44" height="2" rx="1" fill="#38BDF8"/>
+</svg>
